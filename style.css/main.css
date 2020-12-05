@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#bodywrap{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background:hsl(240, 78%, 98%);
+    background-image: url("../images/bg-top.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 40vw;
+    background-position-y: -10vh;
+}
+#displaydiv{
+    width: 90%;
+    margin: auto;
+}
+#displayhead{
+    text-align: center;
+}
+#togglediv{
+    font-weight: 700;
+    color: hsl(233, 13%, 49%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#toggle{
+    display: flex;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 2px;
+    align-items: center;
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+#toggle:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, hsl(236, 66%, 86%), hsl(237, 84%, 81%));
+}
+#toggleknob{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: hsl(0, 0%, 100%);
+}
+.toggleopen{
+    margin-left: auto;
+}
+.bodyinfocards{
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px 0px wheat;
+}
+.planprice{
+    font-size: 50px;
+    font-weight: 700;
+}
+#typeofplan{
+    font-weight: 700;
+}
+.monthly{
+    display: none;
+}
+/*toggle styles*/
+.open .monthly{
+    display: block;
+}
+.open .annually{
+    display: none;
+}
+/*toggle styles*/
+#additionalinfo div{
+    padding: 10px;
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+#additionalinfo div:nth-child(1){
+    border-top: 1px solid hsl(234, 14%, 74%);
+    margin-top: 10px;
+}
+.learnmore{
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+.learnmore a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+@media(min-width: 790px){
+    #bodywrap{
+        background-image: url("../images/bg-top.svg");
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-position-x: 75vw;
+        background-position-y: 0vw;
+       
+    }
+    #togglediv{
+        width: 20%;
+        align-self: center;
+        margin: auto;
+    }
+    #displaydiv{
+        width: 100%;
+        background-image: url("../images/bg-bottom.svg");
+        background-size: 25%;
+        background-repeat: no-repeat;
+        background-position-y: 100%;
+        background-position-x: 0vw;
+    }
+    #displaybody{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+    .bodyinfocards{
+        width: 22%;
+    }
+    .bodyinfocards:nth-child(2){
+        transform: scaleY(1.1);
+    }
+}

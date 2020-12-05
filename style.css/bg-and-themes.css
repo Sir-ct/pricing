@@ -1,0 +1,38 @@
+.learnmorewhitebg{
+    background: hsl(0, 0%, 100%);
+}
+.learnmorewhitebg a{
+    color: hsl(237, 63%, 64%);
+}
+.learnmorewhitebg:hover{
+    cursor: pointer;
+    background:  linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: 1px solid hsl(0, 0%, 100%);
+}
+.learnmorewhitebg:hover a{
+    color: hsl(0, 0%, 100%);
+}
+
+.learnmorelinearbg{
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+.learnmorelinearbg a{
+    color: hsl(0, 0%, 100%);
+}
+.learnmorelinearbg:hover{
+    cursor: pointer;
+    background: hsl(0, 0%, 100%);
+    border: 1px solid hsl(237, 63%, 64%);
+}
+.learnmorelinearbg:hover a{
+    color: hsl(237, 63%, 64%);
+}
+
+.infolinearbg{
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+.infowhitebg{
+    color: hsl(232, 13%, 33%);
+    background: hsl(0, 0%, 100%);
+}
